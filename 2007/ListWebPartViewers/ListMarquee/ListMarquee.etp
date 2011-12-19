@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<EFPROJECT>
+    <GENERAL>
+        <BANNER>Microsoft Visual Studio Application Template File</BANNER>
+        <VERSION>1.00</VERSION>
+        <SourceControlSettings>
+            <ProjectName>"$/KWizCom/Components/ListWebPartViewers",       </ProjectName>
+            <AuxPath></AuxPath>
+            <LocalPath>..</LocalPath>
+            <Provider>MSSCCI:Microsoft Visual SourceSafe</Provider>
+        </SourceControlSettings>
+        <Views>
+            <ProjectExplorer>
+                <File>ListMarquee_Deploy\ListMarquee_Deploy.vdproj</File>
+                <File>ListMarqueeWP\ListMarqueeWP.csproj</File>
+            </ProjectExplorer>
+        </Views>
+        <References>
+            <Reference>
+                <FILE>ListMarquee_Deploy\ListMarquee_Deploy.vdproj</FILE>
+                <GUIDPROJECTID>{A7374AD2-A82B-48AF-9B02-D78AFD1843F9}</GUIDPROJECTID>
+            </Reference>
+            <Reference>
+                <FILE>ListMarqueeWP\ListMarqueeWP.csproj</FILE>
+                <GUIDPROJECTID>{B3326B98-C0B6-4C43-A741-8D832AA2F5DD}</GUIDPROJECTID>
+            </Reference>
+        </References>
+    </GENERAL>
+</EFPROJECT>

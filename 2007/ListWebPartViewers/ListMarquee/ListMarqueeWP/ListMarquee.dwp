@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebPart xmlns="http://schemas.microsoft.com/WebPart/v2" >
+	<Title>List Marquee Web Part</Title>
+	<Description>This Web Part displays list items as a scorlling marquee.</Description>
+	<Assembly>KWizCom.ListMarquee, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30fb4ddbec95ff8f</Assembly>
+	<TypeName>KWizCom.SharePoint.WebParts.ListMarquee.ListMarquee</TypeName>
+	<!-- Specify initial values for any additional base class or custom properties here. -->
+</WebPart>

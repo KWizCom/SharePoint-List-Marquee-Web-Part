@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- You need only one manifest per CAB project for Web Part Deployment.-->
+<!-- This manifest file can have multiple assembly nodes.-->
+<WebPartManifest xmlns="http://schemas.microsoft.com/WebPart/v2/Manifest">
+  <Assemblies>
+    <Assembly FileName="KWizCom.ListMarquee.dll">
+	<!-- Use the <ClassResource> tag to specify resources like image files or JScript files that your Web Parts use. -->
+    <!-- Note that you must use relative paths when specifying resource files. -->
+      <ClassResources>
+        <ClassResource FileName="Marquee.xslt"/>
+      </ClassResources>
+      <SafeControls>
+        <SafeControl
+          Namespace="KWizCom.SharePoint.WebParts.ListMarquee"
+          TypeName="*"
+        />
+      </SafeControls>
+    </Assembly>
+    <Assembly FileName="KWizCom.BaseListWebPart.dll">
+    </Assembly>
+  </Assemblies>
+  <DwpFiles>
+    <DwpFile FileName="ListMarquee.dwp"/>
+  </DwpFiles>
+</WebPartManifest>

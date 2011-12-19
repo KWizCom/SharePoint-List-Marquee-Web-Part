@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C4B1840A-EDE2-4613-A805-CD6EEBCA012A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KWizCom.SharePoint.WebParts.ListMarquee</RootNamespace>
+    <AssemblyName>KWizCom.ListMarquee</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>KWizCom.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\Prereq\Prereq.EventReceiver.cs">
+      <DependentUpon>Prereq.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ListMarquee\ListMarquee.cs" />
+    <Compile Include="ListMarquee\MarqueeToolPart.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilties.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Prereq\Prereq.feature">
+      <FeatureId>{6d168245-3255-4a2f-b071-901d06a1f08a}</FeatureId>
+    </None>
+    <None Include="Features\WebPart\WebPart.feature">
+      <FeatureId>{787f0310-63ec-4f3d-8bb0-6a6ea6adad4f}</FeatureId>
+    </None>
+    <None Include="KWizCom.snk" />
+    <None Include="ListMarquee\ListMarqueeWP.dwp" />
+    <None Include="ListMarquee\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{14a66c48-5724-40e5-ad53-ad1de612d16a}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{e4fc4a88-2578-42ac-b329-54f58758a53a}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="SiteAssets\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0c7f25eb-7698-4f6d-ab5d-298c2f50f3a0}</SharePointProjectItemId>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BaseListWebPart\BaseListWebPart.csproj">
+      <Project>{F756011A-E722-4AAE-A056-935759683E49}</Project>
+      <Name>BaseListWebPart</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Prereq\Prereq.Template.xml">
+      <DependentUpon>Prereq.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\WebPart\WebPart.Template.xml">
+      <DependentUpon>WebPart.feature</DependentUpon>
+    </Content>
+    <Content Include="ListMarquee\Elements.xml" />
+    <Content Include="SiteAssets\Elements.xml" />
+    <Content Include="SiteAssets\KWizCom\ListMarquee\logokwizcom.gif" />
+    <Content Include="SiteAssets\KWizCom\ListMarquee\Marquee.xslt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>
