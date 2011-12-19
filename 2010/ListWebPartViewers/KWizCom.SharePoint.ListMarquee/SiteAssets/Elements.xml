@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="ListMarqueeAssets" Path="SiteAssets\KWizCom\ListMarquee" Url="SiteAssets/KWizCom/ListMarquee">
+		<File Url="Marquee.xslt" Type="GhostableInLibrary" />
+		<File Url="logokwizcom.gif" Type="GhostableInLibrary" />
+	</Module>
+</Elements>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="SiteAssets\" Type="ElementManifest" />
+    <ProjectItemFile Source="KWizCom\ListMarquee\Marquee.xslt" Target="SiteAssets\KWizCom\ListMarquee\" Type="ElementFile" />
+    <ProjectItemFile Source="KWizCom\ListMarquee\logokwizcom.gif" Target="SiteAssets\KWizCom\ListMarquee\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c69eefff-bbe8-4956-a087-a179c099cfb9" solutionId="c69eefff-bbe8-4956-a087-a179c099cfb9" resetWebServer="false" name="KWizCom SharePoint ListMarquee v11.0.04 Sandbox" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="codeplex.spsl.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\..\..\..\SharedUtilities\2010 Sandbox\KWizComSandboxFoundation\KWizComSandboxFoundation\Referenced Assemblies\codeplex.spsl.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="5c0341ce-b0ab-4082-8644-908506793546" />
+    <featureReference itemId="22c065da-f8ad-40d1-a437-abfec84e574d" />
+  </features>
+</package>

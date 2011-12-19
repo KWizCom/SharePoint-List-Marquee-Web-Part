@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="KWizCom.SharePoint.ListMarquee.ListMarquee.ListMarquee, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">List Marquee Sandbox Web Part</property>
+        <property name="Description" type="string">This Web Part displays list items as a scorlling marquee.</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

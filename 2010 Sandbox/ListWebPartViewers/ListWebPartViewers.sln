@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KWizCom.SharePoint.ListMarquee.SB", "KWizCom.SharePoint.ListMarquee\KWizCom.SharePoint.ListMarquee.SB.csproj", "{C989B484-C169-4A43-BFAB-53E07977ED54}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs2:8080/tfs/kwizcomprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = KWizCom.SharePoint.ListMarquee\\KWizCom.SharePoint.ListMarquee.SB.csproj
+		SccProjectName1 = KWizCom.SharePoint.ListMarquee
+		SccLocalPath1 = KWizCom.SharePoint.ListMarquee
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C989B484-C169-4A43-BFAB-53E07977ED54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C989B484-C169-4A43-BFAB-53E07977ED54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C989B484-C169-4A43-BFAB-53E07977ED54}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C989B484-C169-4A43-BFAB-53E07977ED54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C989B484-C169-4A43-BFAB-53E07977ED54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C989B484-C169-4A43-BFAB-53E07977ED54}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
