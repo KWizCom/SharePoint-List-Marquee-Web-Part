@@ -1,22 +1,12 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseListWebPart", "BaseListWebPart\BaseListWebPart.csproj", "{F756011A-E722-4AAE-A056-935759683E49}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KWizCom.SharePoint.ListMarquee", "KWizCom.SharePoint.ListMarquee\KWizCom.SharePoint.ListMarquee.csproj", "{C4B1840A-EDE2-4613-A805-CD6EEBCA012A}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://tfs2:8080/tfs/kwizcomprojects
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = BaseListWebPart\\BaseListWebPart.csproj
-		SccProjectName1 = BaseListWebPart
-		SccLocalPath1 = BaseListWebPart
-		SccProjectUniqueName2 = KWizCom.SharePoint.ListMarquee\\KWizCom.SharePoint.ListMarquee.csproj
-		SccProjectName2 = KWizCom.SharePoint.ListMarquee
-		SccLocalPath2 = KWizCom.SharePoint.ListMarquee
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

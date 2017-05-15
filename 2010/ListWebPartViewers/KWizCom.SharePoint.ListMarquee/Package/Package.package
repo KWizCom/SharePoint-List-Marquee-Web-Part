@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e4fc4a88-2578-42ac-b329-54f58758a53a" solutionId="e4fc4a88-2578-42ac-b329-54f58758a53a" resetWebServer="false" name="KWizCom SharePoint ListMarquee v11.0.04" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e4fc4a88-2578-42ac-b329-54f58758a53a" solutionId="e4fc4a88-2578-42ac-b329-54f58758a53a" resetWebServer="false" name="KWizCom SharePoint ListMarquee v11.0.05" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <assemblies>
     <projectOutputAssembly location="KWizCom.BaseListWebPart.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\BaseListWebPart\BaseListWebPart.csproj" />
   </assemblies>

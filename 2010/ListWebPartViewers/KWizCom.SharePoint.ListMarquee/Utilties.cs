@@ -15,7 +15,7 @@ namespace KWizCom.SharePoint.WebParts.ListMarquee
 
 	public class Constants
 	{
-		public const string Version = "11.0.04";
+		public const string Version = "11.0.05";
 
 		public class ToolPart
 		{
@@ -33,7 +33,6 @@ namespace KWizCom.SharePoint.WebParts.ListMarquee
 
 			public const string Body_Text_MarqueeDirection = "Merquee Scroll Direction";
 			public const string Body_Text_MarqueeLinkTarget = "Open Item Location";
-
 		}
 	}
 }

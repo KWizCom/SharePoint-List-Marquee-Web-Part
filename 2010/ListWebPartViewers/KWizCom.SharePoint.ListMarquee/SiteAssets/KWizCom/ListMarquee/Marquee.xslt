@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <!--
-Written by: Shai Ben Shooshan Shaibs@gmail.com
+Written by: Shai Petel shai@kwizcom.com
 At:			23/04/2006
 For:		KWizCom http://www.KWizCom.com
 
@@ -17,14 +17,14 @@ For:		KWizCom http://www.KWizCom.com
 	<script>
 	function marqStop(marq)
 	{
-		marq.scrollAmount= 0;
+		marq.stop();
 	}
 	function marqStart(marq)
 	{
-		marq.scrollAmount = <xsl:value-of select="$MarqueeAmount" />;
+		marq.start();
 	}
 	</script>
-	<marquee onmouseover="marqStop(this);" onmouseout="marqStart(this);">
+	<marquee onmouseover="marqStop(this);" onmouseout="marqStart(this);" style="height:98%;width:98%">
 		<xsl:attribute name="ScrollAmount">
 			<xsl:value-of select="$MarqueeAmount" />
 		</xsl:attribute>
@@ -38,7 +38,6 @@ For:		KWizCom http://www.KWizCom.com
 		<xsl:choose>
 			<xsl:when test="$MarqueeDirection = 'up' or $MarqueeDirection = 'down' ">
 				<table width="100%" border="0" cellpadding="0" cellspacing="0">
-					<xsl:attribute name="height"><xsl:value-of select="100 * count(*)" />%</xsl:attribute>
 					<xsl:for-each select=".">
 						<xsl:apply-templates/>
 					</xsl:for-each>
@@ -46,9 +45,10 @@ For:		KWizCom http://www.KWizCom.com
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:for-each select=".">
-					<table height="100%" border="0" cellpadding="0" cellspacing="10">
-						<xsl:attribute name="width"><xsl:value-of select="100 * count(*)" />%</xsl:attribute>
-						<xsl:apply-templates/>
+					<table border="0" cellpadding="0" cellspacing="10">
+						<tr>
+							<xsl:apply-templates/>
+						</tr>
 					</table>
 				</xsl:for-each>
 			</xsl:otherwise>
@@ -91,34 +91,24 @@ For:		KWizCom http://www.KWizCom.com
 		</xsl:when>
 		<xsl:otherwise>
 			<td>
-				<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
-					<tr height="1%" valign="top">
-						<td>
-							<b>
-								<A>
-									<xsl:attribute name="Target">
-										<xsl:value-of select="$LinkTarget" />
-									</xsl:attribute>
-									<xsl:attribute name="href">
-										<xsl:value-of disable-output-escaping="yes" select="@ViewItemUrl"/>
-									</xsl:attribute>
-									<xsl:if test="$LinkTarget = '_self'">
-										<xsl:attribute name="onclick">
-											_OpenPopUpPage("<xsl:value-of disable-output-escaping="yes" select="@ViewItemUrl"/>");return false;
-										</xsl:attribute>
-									</xsl:if>
-									<xsl:value-of disable-output-escaping="yes" select="@Title"/>
-								</A>
-							</b>
-						</td>
-					</tr>
-					<tr height="1%" valign="top"><td><hr /></td></tr>
-					<tr valign="top">
-						<td>
-							<xsl:value-of disable-output-escaping="yes" select="@Body"/>
-						</td>
-					</tr>
-				</table>
+				<b>
+					<A>
+						<xsl:attribute name="Target">
+							<xsl:value-of select="$LinkTarget" />
+						</xsl:attribute>
+						<xsl:attribute name="href">
+							<xsl:value-of disable-output-escaping="yes" select="@ViewItemUrl"/>
+						</xsl:attribute>
+						<xsl:if test="$LinkTarget = '_self'">
+							<xsl:attribute name="onclick">
+								_OpenPopUpPage("<xsl:value-of disable-output-escaping="yes" select="@ViewItemUrl"/>");return false;
+							</xsl:attribute>
+						</xsl:if>
+						<xsl:value-of disable-output-escaping="yes" select="@Title"/>
+					</A>
+				</b>
+				<hr />
+				<xsl:value-of disable-output-escaping="yes" select="@Body"/>
 			</td>
 		</xsl:otherwise>
 	</xsl:choose>
